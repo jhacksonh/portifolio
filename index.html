@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Portifolio</title>
+</head>
+<style>
+    * {
+        border: none;
+        background: none;
+        outline: none;
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+        font-size: 24px;
+    }
+
+    body {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background-color: darksalmon;
+    }
+
+    .body_container {
+        /* background-color: black; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: max-content;
+        display: flex;
+        justify-content: center;
+        width: 95%;
+    }
+    .container_master{
+        height: 100%;
+        width: max-content;
+    }
+    .container {
+        margin: -26px 0;
+        width: 100%;
+        padding: 16px;
+        background-color: blueviolet;
+        transform: rotate(3deg);
+        border-left: 3px solid #000;
+        border-right: 3px solid #000;
+        z-index: 1;
+    }
+
+    .rot_normal {
+        rotate: -3deg;
+    }
+
+    .titles {
+        font-size: 30px;
+    }
+
+    .div_espiral {
+        display: flex;
+    }
+    .div_espTop {
+        background-color: aliceblue;
+    }
+    .div_espBotton{
+        background-color: aliceblue;
+        justify-content: center;
+    }
+
+    .div_espiral div{
+        width: 72.6%;
+        background-color: blueviolet;
+    }
+    .div_espTop div{
+        margin-left: -28px;
+        border-top-right-radius: 50px;
+        border-right: 3px solid #000;
+    }
+    .div_espBotton div{
+        margin-right: -28px;
+        border-left: 3px solid #000;
+        border-bottom-left-radius: 50px;
+    }
+
+
+
+    .espiral {
+        width: 3em;
+        background-color: blueviolet;
+        border-radius: 50%;
+    }
+
+    .div_espiral .esp_top {
+        rotate: 183deg;
+        transform: rotateY(180deg);
+        margin-left: 15px;
+    }
+    .div_espiral .esp_botton {
+        rotate: 3deg;
+        transform: rotateY(180deg);
+        margin-right: -48px;
+    }
+
+    .div_all {
+        display: flex;
+
+    }
+
+    .coll_lat {
+        width: 5em;
+    }
+</style>
+
+<body>
+    <main class="body_container">
+        <div class="container_master">
+            <div class="div_espiral div_espTop">
+                <img class="espiral esp_top" src="./gallery/images/espiral.png" alt="">
+                <div></div>
+            </div>
+            <div class="div_all">
+                <div class="coll_lat"></div>
+                <section class="container">
+
+                    <header class="rot_normal">
+                        <h1 class="titles">teste de fonte</h1>
+                        <h1 class="titles">teste de fonte</h1>
+                        <h1 class="titles">teste de fonte</h1>
+                        <h1 class="titles">teste de fonte</h1>
+                        <h1 class="titles">teste de fonte</h1>
+                        <h1 class="titles">teste de fonte</h1>
+                        <h1 class="titles">teste de fonte</h1>
+                        <h1 class="titles">teste de fonte</h1>
+                        <h1 class="titles">teste de fonte</h1>
+                        <h1 class="titles">teste de fonte</h1>
+                        <h1 class="titles">teste de fonte</h1>
+                        <h1 class="titles">teste de fonte</h1>
+
+                    </header>
+
+                    <section class="content rot_normal">
+
+                    </section>
+                    <footer class="rot_normal">
+                    </footer>
+
+                </section>
+                <div class="coll_lat">
+                </div>
+            </div>
+            <div class="div_espiral div_espBotton">
+                <div>
+
+                </div>
+                <img class="espiral esp_botton" src="./gallery/images/espiral.png" alt="">
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
