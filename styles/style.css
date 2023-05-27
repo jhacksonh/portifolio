@@ -9,11 +9,42 @@
     font-size: 24px;
 }
 
+:root {
+    /* all Colors*/
+    --color-bg1: #1A8180;
+    --color-primary: #000;
+    --color-secudary: #ddd;
+    --color-cooper: #9E5E45; 
+    /*light:*/
+    /*#background*/
+    --color-bgPrimary-light: #AEFFFF;
+    /*#colors*/
+    --colorLight-cyan1: #00FDFF;
+    --colorLight-cyan2: #35E0FF;
+    --colorLight-cyan3: #00FFCC;
+    --colorLight-blue1: #009CB8;
+    --colorLight-blue2: #4ED6CB;
+    --colorLight-blue3: #007C97;
+    --colorLight-blue4: #25BDB1;
+    /* dark */
+    /* #background*/
+    --color-bgPrimary-dark: #000033;
+    /*#colors*/
+    --colorDark-blue1:#052758;
+    --colorDark-blue2: #064384;
+    --colorDark-blue3: #0071CF;
+
+    /* fonts */
+    --font-title1: 30px;
+    --font-title2: 24px;
+    --font-title3: 20px;
+}
+
 body {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: darksalmon;
+    background-color: var(--color-bgPrimary-light);
 }
 
 .body_container {
@@ -27,19 +58,22 @@ body {
     justify-content: center;
     width: 95%;
 }
-.container_master{
+
+.container_master {
     height: 100%;
     width: max-content;
 }
+
 .container {
     margin: -26px 0;
     width: 100%;
     padding: 16px;
-    background-color: blueviolet;
+    background-color: var(--colorLight-blue1);
     transform: rotate(3deg);
     border-left: 3px solid #000;
     border-right: 3px solid #000;
     z-index: 1;
+    /* box-shadow: 2px 4px 10px 10px var(--colorDark-blue3); */
 }
 
 .rot_normal {
@@ -47,28 +81,37 @@ body {
 }
 
 .titles {
-    font-size: 30px;
+    font-size: var(--font-title1);
 }
 
 .div_espiral {
     display: flex;
 }
-.div_espTop {
-}
-.div_espBotton{
+
+/* .div_espTop {} */
+
+.div_espBotton {
     justify-content: center;
 }
 
-.div_espiral div{
+.div_espiral div {
     width: 72.6%;
-    background-color: blueviolet;
+    background-color: var(--colorLight-blue1);
+    box-shadow: -15px 5px 100px 3px var(--colorDark-blue3);
 }
-.div_espTop div{
+
+.div_espTop div {
     margin-left: -28px;
     border-top-right-radius: 50px;
     border-right: 3px solid #000;
+    text-align: center;
+    font-weight: bolder;
 }
-.div_espBotton div{
+.div_espTop div h1{
+    scale: 1.2;
+    text-shadow: 0 0 5px #fff;
+}
+.div_espBotton div {
     margin-right: -28px;
     border-left: 3px solid #000;
     border-bottom-left-radius: 50px;
@@ -78,7 +121,7 @@ body {
 
 .espiral {
     width: 3em;
-    background-color: blueviolet;
+    background-color: var(--colorLight-blue3);
     border-radius: 50%;
 }
 
@@ -87,6 +130,7 @@ body {
     transform: rotateY(180deg);
     margin-left: 15px;
 }
+
 .div_espiral .esp_botton {
     rotate: 3deg;
     transform: rotateY(180deg);
